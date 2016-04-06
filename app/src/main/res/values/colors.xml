@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#002D64</color>
+    <color name="colorAccent">#FF5702</color>
+    <color name="colorOrange">#FF5702</color>
+    <color name="colorViewBelowPictureMain">#FF5702</color>
+    <color name="colorTitleMain">#002D64</color>
+    <color name="colorLightGrey">#d6d2d2</color>
+    <color name="colorDarkGrey">#838080</color>
+    <color name="colorSubActivityTitle">#FF5702</color>
+    <color name="colorRecyclerCaptions">#FFFFFF</color>
+</resources>

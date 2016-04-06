@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">FinalProject_DeshkoNataliia</string>
+    <string name="app_title">San Francisco</string>
+    <string name="quotation">\" San Francisco is poetry. Even the hills rhyme. \" \n -Pat Montandon  </string>
+    <string name="city_info0">Leaving San Francisco is like saying goodbye to an old sweetheatr. You want to linger as long as possible. \n Walter Cronkite</string>
+    <string name="local_time_title">Local time:</string>
+    <string name="edit_text_hint">Email</string>
+    <string name="send_email_button">SEND EMAIL AND COMPLETE</string>
+
+    <string name="caption1">Golden Gate Bridge</string>
+    <string name="caption2">Painted Ladies Houses</string>
+    <string name="caption3">Oakland Bay Bridge</string>
+    <string name="caption4">Cable Car</string>
+    <string name="caption5">Alcatraz</string>
+
+    <string name="tip1">Pedestrians and bykes go along different sizes of bridge.</string>
+    <string name="tip2">One of \"Ladies\" was sold for $3.1 million which is $900K below original price.</string>
+    <string name="tip3">Two parts of the bridge are connected under Yelba Buena island.</string>
+    <string name="tip4">The San Francisco cable car system is the world\'s last manually operated cable car system.</string>
+    <string name="tip5">Only 3 people succeeded to escape from Alcatraz.</string>
+
+    <string name="length1">2,74 km</string>
+    <string name="address2">Steiner St, San Francisco, CA 94117, United States</string>
+    <string name="length3">7.18 km</string>
+    <string name="area4">2 ha</string>
+    <string name="area5">9 ha</string>
+
+    <string name="sub_image_text_1_1">Sunset around Golden Gate Bridge</string>
+    <string name="sub_image_text_2">There are 7 similar houses standing in a row</string>
+    <string name="sub_image_text_3">As part of Interstate 80 and the direct road between San Francisco and Oakland, it carries about 240,000 vehicles a day on its two decks.</string>
+    <string name="sub_image_text_4">Vector graphics</string>
+    <string name="sub_image_text_5">Alcatraz Island is located 1.25 miles offshore</string>
+
+    <string name="subscribe_check_box">I want to get more imformation!</string>
+    <string name="city_name">SAN FRANCISCO</string>
+    <string name="ways">5 WAYS TO EXPLORE SAN FRANCISCO</string>
+    <string name="golden_gate_bridge">Golden Gate Bridge</string>
+    <string name="field_interesting_caption">Interesting:</string>
+    <string name="field_length_caption">Length:</string>
+    <string name="painted_ladies">Painted Ladies Houses</string>
+    <string name="field_address_caption">Address:</string>
+    <string name="field_area_caption">Area:</string>
+    <string name="app_label">5 ways to explore San Francisco</string>
+    <string name="data_time_text_view">Date and time</string>
+
+</resources>

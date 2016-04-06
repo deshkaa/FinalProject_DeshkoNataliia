@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nataliia.finalproject_deshkonataliia.Activity4">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_act4"
+        style="@style/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:title="@string/golden_gate_bridge"
+        app:theme="@style/ToolbarBackArrow" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/title_map_4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/interesting_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/subactivity_fields_margin"
+            android:text="@string/field_interesting_caption"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/subactivity_fields_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/interesting_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/subactivity_fields_margin"
+            android:layout_toRightOf="@id/interesting_caption"
+            android:text="@string/tip4"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/area_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/interesting_text_view"
+            android:layout_margin="@dimen/subactivity_fields_margin"
+            android:text="@string/field_area_caption"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/subactivity_fields_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/area_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/interesting_text_view"
+            android:layout_margin="@dimen/subactivity_fields_margin"
+            android:layout_toRightOf="@id/interesting_caption"
+            android:text="@string/area4"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ImageView
+            android:id="@+id/sub_image_4"
+            android:layout_width="@dimen/sub_images_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area_text_view"
+            android:layout_margin="@dimen/sub_images_margin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_4_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area_text_view"
+            android:layout_toRightOf="@id/sub_image_4"
+            android:text="@string/sub_image_text_4"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/subscribe_form"></include>
+</LinearLayout>
