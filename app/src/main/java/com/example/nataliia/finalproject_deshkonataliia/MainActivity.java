@@ -31,43 +31,9 @@ public class MainActivity extends AppCompatActivity {
          * Providing onClickListener for moving to other activities
          */
         View.OnClickListener[] onClickListener;
+        Functions functions = new Functions();
         onClickListener = new View.OnClickListener[5];
-
-        onClickListener[0] = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Activity1.class);
-                startActivityForResult(intent, 0);
-            }
-        };
-        onClickListener[1] = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Activity2.class);
-                startActivityForResult(intent, 0);
-            }
-        };
-        onClickListener[2] = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Activity3.class);
-                startActivityForResult(intent, 0);
-            }
-        };
-        onClickListener[3] = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Activity4.class);
-                startActivityForResult(intent, 0);
-            }
-        };
-        onClickListener[4] = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Activity5.class);
-                startActivityForResult(intent, 0);
-            }
-        };
+        functions.setOnClickListeners(onClickListener,this);
 
         /**
          * RecyclerView creating
@@ -98,13 +64,11 @@ public class MainActivity extends AppCompatActivity {
         if (monthNumber >= 0 && monthNumber <= 11) {
             month = months[monthNumber];
         }
-        String time = String.format("%02d", calendar.get(Calendar.DAY_OF_MONTH)) + " " +
+        return String.format("%02d", calendar.get(Calendar.DAY_OF_MONTH)) + " " +
                 month.toUpperCase() + ", " +
                 String.format("%02d", calendar.get(Calendar.HOUR)) + ":" +
                 String.format("%02d", calendar.get(Calendar.MINUTE)) + " " +
                 ((calendar.get(Calendar.AM_PM) == 0) ? "AM" : "PM");
-
-        return time;
     }
 
     public void open_map_click(View view) {
