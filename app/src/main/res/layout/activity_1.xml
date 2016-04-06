@@ -23,11 +23,6 @@
         android:adjustViewBounds="true"
         android:src="@drawable/title_map_1" />
 
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner" />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
