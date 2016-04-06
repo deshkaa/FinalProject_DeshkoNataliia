@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Function which returns current time for GMT-07:00
+     * Returns current time for GMT-07:00
      */
     private String getCurrentDateTime() {
         TimeZone timeZone = TimeZone.getTimeZone("GMT-07:00");

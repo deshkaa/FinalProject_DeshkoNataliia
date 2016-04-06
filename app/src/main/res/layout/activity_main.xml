@@ -42,15 +42,15 @@
                 android:id="@+id/quotation_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/mainImageView"
-                android:layout_marginRight="@dimen/quotation_margin_right"
                 android:gravity="right"
                 android:text="@string/quotation"
                 android:textColor="@color/colorLightGrey"
                 android:textColorHighlight="@color/colorOrange"
                 android:textIsSelectable="true"
                 android:textSize="@dimen/quotation_text_size"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                android:layout_alignTop="@+id/mainViewImageView"
+                android:layout_alignParentRight="true" />
 
 
             <ImageView
@@ -101,7 +101,6 @@
                 android:onClick="open_weather_website_click"
                 android:src="@drawable/button_weather" />
 
-
             <ImageButton
                 android:id="@+id/map_button"
                 android:layout_width="wrap_content"
@@ -121,7 +120,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/map_button"
                 android:layout_centerInParent="true"
-                android:layout_marginBottom="@dimen/ways_margin_bottom"
+                android:layout_marginTop="@dimen/ways_margin"
+                android:layout_marginBottom="@dimen/ways_margin"
                 android:gravity="center_horizontal"
                 android:padding="@dimen/quotation_padding"
                 android:text="@string/ways"

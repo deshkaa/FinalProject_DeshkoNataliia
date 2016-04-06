@@ -1,7 +1,5 @@
 package com.example.nataliia.finalproject_deshkonataliia;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -13,12 +11,15 @@ import android.widget.EditText;
 public class Activity3 extends AppCompatActivity {
 
     private String title;
+    private Functions functions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_3);
         title = getString(R.string.caption3);
+        functions = new Functions();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_act3);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
@@ -46,16 +47,6 @@ public class Activity3 extends AppCompatActivity {
     }
 
     public void submitButtonClicked(View view) {
-        EditText editText = (EditText) findViewById(R.id.emailEditText);
-        String email = editText.getText().toString();
-        if (email.equals("")) return;
-        String message = "Hello! I want to get more information about " + title + "\n" +
-                "My email is: " + email;
-        Intent emailIntent = new Intent(Intent.ACTION_SEND);
-        emailIntent.setData(Uri.parse("mailto:natalyadesh9@gmail.com"));
-        emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, title);
-        emailIntent.putExtra(Intent.EXTRA_TEXT, message);
-        startActivity(emailIntent);
+        functions.createEmail(this, title);
     }
 }

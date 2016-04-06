@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <CheckBox
         android:id="@+id/subscribeCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/check_box_margin_top"
+        android:onClick="submitCheckBoxClicked"
         android:text="@string/subscribe_check_box"
-        android:textColor="@color/colorPrimaryDark"
-        android:onClick="submitCheckBoxClicked" />
+        android:textColor="@color/colorPrimaryDark" />
 
     <EditText
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:hint="@string/edit_text_hint"
-        android:padding="@dimen/padding"
         android:inputType="textEmailAddress"
-        android:id="@+id/emailEditText"
-        android:enabled="false"/>
+        android:padding="@dimen/padding" />
 
     <Button
+        android:id="@+id/subscribeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/send_email_button"
-        android:id="@+id/subscribeButton"
         android:layout_gravity="end"
+        android:enabled="false"
         android:onClick="submitButtonClicked"
-        android:enabled="false"/>
+        android:text="@string/send_email_button" />
 
 </LinearLayout>

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FinalProject_DeshkoNataliia</string>
     <string name="app_title">San Francisco</string>
-    <string name="quotation">\" San Francisco is poetry. Even the hills rhyme. \" \n -Pat Montandon  </string>
+    <string name="quotation">\" San Francisco is poetry. Even the hills rhyme. \" - Pat Montandon  </string>
     <string name="city_info0">Leaving San Francisco is like saying goodbye to an old sweetheatr. You want to linger as long as possible. \n Walter Cronkite</string>
     <string name="local_time_title">Local time:</string>
     <string name="edit_text_hint">Email</string>
